@@ -1,0 +1,1 @@
+python segment_generation.py -i input/val_detection_videolist.txt -d /media/sdy/dataset/dataset/THUMOS14val/frames25/ -c class_index_detection.txt -o val25.txt

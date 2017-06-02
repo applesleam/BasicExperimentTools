@@ -1,0 +1,11 @@
+with open('my_experiment/scnn_classification_network.txt') as f:
+	lines = f.readlines()
+
+fout = open('my_experiment/fg.txt', 'wr')
+for line in lines:
+	split_elem = line.split(' ')
+	#print type(split_elem[4])
+	if float(split_elem[2]) != 0:
+		fout.writelines(line)
+
+fout.close()

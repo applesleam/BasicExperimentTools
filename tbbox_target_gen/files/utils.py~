@@ -1,0 +1,7 @@
+with open('ucfval_detection_train_25fps_o75_norm_fgbg.txt') as f:
+	lines = f.readlines()
+
+fout = open('new_train_list.txt','wr')
+for line in lines:
+	fout.writelines(line.strip() + ' 0.5\n')
+fout.close()
